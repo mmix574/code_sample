@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct ListNode {
+typedef struct ListNode {
     int val;
     struct ListNode *next;
     ListNode(int x) :
         val(x), next(NULL) {
     }
-};
+}ListNode;
 
 ListNode * create(int array[],int len){
 	ListNode * r,*p;
