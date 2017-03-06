@@ -12,6 +12,6 @@ void merge(int A[],int start,int end){
 
 int main(){
 	int A[MAX_ARRAY_SIZE];
-
+	
 	return 0;
 }
