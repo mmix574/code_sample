@@ -1,9 +1,12 @@
 # include <stdio.h>
 
-void merge_sort(int A[],int start,int end){
+void merge_sort(int A[],int n){
+	
+}
+void msort(int A[],int start,int end){
 
 }
-void merge(int A[],int start,int end){
+void merge(int A[],int B[],int n){
 	
 }
 
