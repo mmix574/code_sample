@@ -27,6 +27,15 @@ int swap(int n,int pos){
 		return n|c;
 	}
 }
+int swap(int n,int start,int end){
+	if(start>end){
+		return swap(n,end,start);
+	}
+	int c = 0x7FFFFFFF;
+
+	c = c>>30-(end-start)<<start;
+	return n^c;
+}
 char *myitoa(int n){
 	int len = bitlen(n);
 	char *res =(char *)malloc(sizeof(len));
@@ -40,10 +49,13 @@ char *myitoa(int n){
 	}
 	return res; 
 }
+
+
 int main(){
 	// int i = 10;
 	// i = swap(i,3);
 	// printf("%d\n",i);
-	swap(100,2,3);
+	// swap(100,2,3);
+	printf("%d\n",res);
 	return 0;
 }
