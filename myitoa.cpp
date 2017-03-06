@@ -41,8 +41,9 @@ char *myitoa(int n){
 	return res; 
 }
 int main(){
-	int i = 10;
-	i = swap(i,3);
-	printf("%d\n",i);
+	// int i = 10;
+	// i = swap(i,3);
+	// printf("%d\n",i);
+	swap(100,2,3);
 	return 0;
 }
