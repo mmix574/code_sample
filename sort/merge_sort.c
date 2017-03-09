@@ -26,8 +26,9 @@ void msort(int A[],int start,int end,int tmp[]){
 	}
 }
 void merge(int A[],int start,int mid,int end,int tmp[]){
-	// printf("merge calling\n");
-	print(A,8);
+	// print(A,8);
+	// printf("start:%d,mid:%d,end:%d,\n",start,mid,end);
+
 	for (int i = start; i <= end; ++i)
 	{
 		tmp[i]=A[i];
@@ -36,7 +37,7 @@ void merge(int A[],int start,int mid,int end,int tmp[]){
 	int p2 = mid+1;
 
 	int i = start;
-	while(p1<mid&&p2<end){
+	while(p1<=mid&&p2<=end){
 		if(tmp[p1]<tmp[p2]){
 			A[i++]=tmp[p1];
 			p1++;
@@ -45,12 +46,15 @@ void merge(int A[],int start,int mid,int end,int tmp[]){
 			p2++;
 		}
 	}
-	while(p1<mid){
+	while(p1<=mid){
 		A[i++]=tmp[p1++];
 	}
-	while(p2<end){
+	while(p2<=end){
 		A[i++]=tmp[p2++];
 	}
+	// print(A,8);
+	// printf("\n");
+
 }
 void print(int A[],int len){
 	for (int i = 0; i < len; ++i)
